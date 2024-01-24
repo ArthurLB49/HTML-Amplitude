@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="styly.css" title=”original”>
+		<link rel="stylesheet" type="text/css" href="print.css" media="print" title="Impression">
+		<link rel="alternate stylesheet" type="text/css" href="screen.css" media="screen" title="Fond noir">
+		<title>Mini projet Amplitude</title>
+		<link rel="icon" href="icone.ico">
+	</head>
+	<body>
+    <header>
+    	<h1>Le projet Amplitude</h1>
+		<p><img src="logo.png" alt="logo Amplitude" id="img3"></p>
+    </header>
+    <nav>
+    	<ul>
+    		<li><a href="index.html">Accueil</a></li>
+        	<li><a href="projet1.html">Amplit'ude</a></li>
+        	<li><a href="projet2.html">Mise en place</a></li>
+        	<li><a href="projet3.html">Financement et Objectifs</a></li>
+        	<li><a href="projetContact.html">Contact</a></li>
+    	</ul>
+    </nav>
+		<button id="zoomIn">Zoom +</button>
+		<button id="zoomOut">Zoom -</button>
+    <main>
+    	<article id="content">
+        	<h2>Mise en place de la solution</h2>
+			<p><img src="miseenplace.png" alt="exemple mise en place" id="img6"></p>
+        	<p>
+        		Sur le schéma ci-dessus, vous pouvez voir un exemple de mise en place d'Amplit'ude.
+				Nos utilisateurs seront les personnes Pour les personnes en hospitalisation à domicile,
+				en sortie d'hospitalisation ou fragilisées.
+        	</p>
+			<p>
+        		Une fois que le service médical préscrit au patient l'hospitalisation à domicile, il est redirigé
+				vers le personnel d'Amplit'ude qui définira avec lui et le médecin traitant, ses besoins.
+				Enfin, les techniciens d'Amplit'ude viennent installer le matériel chez la personne et elle peut
+				rentrer chez elle. Une fois installée, une mise en fonctionnement et une explication au pas-à-pas
+				est donnée. Le service après-vente est lui aussi disponible si la personne rencontre des problèmes
+				dans l'utilisation et un reccueil de l'expérience utilisateur est aussi effectué.
+        	</p>
+        	<hr>
+			<a class="precedent" href="projet1.html">Précédent</a>
+			<a href="#" class="scroll_to_top">Retour en haut ↑</a>
+			<a class="suivant" href="projet3.html">Suivant</a>
+    	</article>
+    </main>
+    	<footer>
+    		<p>Arthur Le Breton, Amplit'ude - dernière mise-à-jour du site : 17/01/2024</p>
+    		    	<script>
+			var zoomIn = document.getElementById("zoomIn");
+			var zoomOut = document.getElementById("zoomOut");
+			var content = document.getElementById("content");
+			var currentSize = 100;
+			zoomIn.addEventListener("click", function() {
+				currentSize += 10;
+				content.style.fontSize = currentSize + "%";
+			});
+			zoomOut.addEventListener("click", function() {
+				currentSize -= 10;
+				content.style.fontSize = currentSize + "%";
+			});
+		</script>
+    	</footer>
+	</body>
+</html>

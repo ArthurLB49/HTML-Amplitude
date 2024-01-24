@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="styly.css" title=”original”>
+		<link rel="stylesheet" type="text/css" href="print.css" media="print" title="Impression">
+		<link rel="alternate stylesheet" type="text/css" href="screen.css" media="screen" title="Fond noir">
+		<title>Mini projet Amplitude</title>
+		<link rel="icon" href="icone.ico">
+	</head>
+	<body>
+    <header>
+    	<h1>Le projet Amplitude</h1>
+		<p><img src="logo.png" alt="logo Amplitude" id="img3"></p>
+    </header>
+    <nav>
+    	<ul>
+    		<li><a href="index.html">Accueil</a></li>
+        	<li><a href="projet1.html">Amplit'ude</a></li>
+        	<li><a href="projet2.html">Mise en place</a></li>
+        	<li><a href="projet3.html">Financement et Objectifs</a></li>
+        	<li><a href="projetContact.html">Contact</a></li>
+    	</ul>
+    </nav>
+		<button id="zoomIn">Zoom +</button>
+		<button id="zoomOut">Zoom -</button>
+    <main>
+    	<article id="content">
+			<h2>La recherche d'investisseurs</h2>
+			<p><img src="investisseurs.png" alt="inversitsseurs" id="img7"></p>
+        	<p>
+        		Pour la réalisation de notre business plan, nous avons pris en compte tous les
+				facteurs, du dépot de brevet pour valider Amplit'ude en tant que matériel médical
+				en passant par les serveurs d'hébergement de données de santé afin de respecter le
+				RGPD. Pour le lancement du projet Amplit'ude, nous allons mettre en service 20 lits
+				médicalisés. La période de préparation et de mise en place du projet prendra 6 mois
+				pendant lesquels l'application qu'utilisera la tablette ainsi que la préparation du matériel.
+				Le financement recherché pour le lancement du projet est de 250 000 €.
+        	</p>
+        	<hr>
+        	<h2>Les objectifs d'Amplit'ude</h2>
+			<p><img src="avecnous.png" alt="Avec Amplitude" id="img8"></p>
+        	<p>
+        		Les objectifs premiers d'Amplit'ude sont la prévention, la sécurisation et l'interactivité
+				entre la personne et son environnement. Ce sont les valeurs de ce projet et avec
+				elles nous allons accomplir les objetifs de l'image ci-dessus.
+        	</p>
+			<p>
+        		Nos objectifs à long terme sont, dans un premier temps, d'étendre notre parc de lits disponibles
+				en ré-invesstissant les bénéfices de l'entreprise dans le dévelloppement d'Amplit'ude et dans
+				la recherche. Enfin, nous allons nous imposer comme le nouvelle Ehpad actif à domicile en
+				améliorant la qualité de sécurisation proposée et en diversifiant notre gamme.
+        	</p>
+        	<hr>
+			<a class="precedent" href="projet2.html">Précédent</a>
+			<a href="#" class="scroll_to_top">Retour en haut ↑</a>
+			<a class="suivant" href="projetContact.html">Suivant</a>
+    	</article>
+    </main>
+    	<footer>
+    		<p>Arthur Le Breton, Amplit'ude - dernière mise-à-jour du site : 17/01/2024</p>
+    		    	<script>
+			var zoomIn = document.getElementById("zoomIn");
+			var zoomOut = document.getElementById("zoomOut");
+			var content = document.getElementById("content");
+			var currentSize = 100;
+			zoomIn.addEventListener("click", function() {
+				currentSize += 10;
+				content.style.fontSize = currentSize + "%";
+			});
+			zoomOut.addEventListener("click", function() {
+				currentSize -= 10;
+				content.style.fontSize = currentSize + "%";
+			});
+		</script>
+    	</footer>
+	</body>
+</html>

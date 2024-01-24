@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="styly.css" title=”original”>
+		<link rel="stylesheet" type="text/css" href="print.css" media="print" title="Impression">
+		<link rel="alternate stylesheet" type="text/css" href="screen.css" media="screen" title="Fond noir">
+		<title>Mini projet Amplitude</title>
+		<link rel="icon" href="icone.ico">
+	</head>
+	<body>
+    <header>
+    	<h1>Le projet Amplitude</h1>
+		<p><img src="logo.png" alt="logo Amplitude" id="img3"></p>
+    </header>
+    <nav>
+    	<ul>
+    		<li><a href="index.html">Accueil</a></li>
+        	<li><a href="projet1.html">Amplit'ude</a></li>
+        	<li><a href="projet2.html">Mise en place</a></li>
+        	<li><a href="projet3.html">Financement et Objectifs</a></li>
+        	<li><a href="projetContact.html">Contact</a></li>
+    	</ul>
+    </nav>
+		<button id="zoomIn">Zoom +</button>
+		<button id="zoomOut">Zoom -</button>
+    <main>
+    	<article id="content">
+        	<h2>Accueil</h2>
+			<p><img src="tomber.jpg" alt="personne qui chute" id="img1"></p>
+        	<p class="intro">
+        		Aujourd'hui beaucoup de personnes sont hospitalisés parce qu'elles chutent.
+				Selon le ministère de la santé, il y a plus de 2 millions de chutent de personnes de plus 
+				de 65 ans par an et c'est la cause de 10 000 décès. 
+				La France a montré son intérêt envers cet enjeu en proposant le plan national de chute.
+				Au-delà conséquences humaines,coût pour la collectivité : 2 milliards d’euros.
+        	</p>
+        	<h2>L'hospitalisation à domicile ?</h2>
+        	<p>
+        		Cependant les entreprises qui traitent cette problématique se concentrent 
+				principalement sur des solutions de téléassistance ou pour les établissements de santé.
+				En France, plus de 260 000 patients sont envoyés en hospitalisation à domicile chaque année. 
+				Ces chiffres tendent à augmenter en alternative à l’hospitalisation classique, 
+				que ce soit par manque de lit ou de personnel soignant.
+        	</p>
+        	<p>
+        		A travers ces exemples, nous avons pu voir deux choses: quand on est chez 
+				soi on veut de la liberté et de l'autonomie, et à l'inverse à l'hôpital on recherche la sécurité.
+				C’est ici, à la jonction des deux qu’intervient le projet Amplit’ude qui va 
+				allier les deux mondes afin de créer la nouvelle hospitalisation active à domicile.
+        	</p>
+    		<hr>
+			<h2>Résumé du projet Amplitude</h2>
+			<p><img src="papa.jpg" alt="père d'arthur" id="img2"></p>
+        	<p>
+				Pour remonter aux origines de cet projet, je vais vous raconter une histoire personnelle.
+        		Voici Laurent, c’est mon papa. Suite à un AVC il est devenu hémiplégique mais a continué vivre maison.
+				Il y a quelques mois, mon père s'est cassé la jambe. Comme plus de place dans les hôpitaux,
+				prescrit un lit médicalisé pour HAD. Pendant cette période, j'étais dans une autre ville donc je ne 
+				pouvais le voir qu'une fois par semaine. Crée chez lui un manque de lien social. 
+				toujours vécu dans sa maison,donc il souhaitait reprendre ses habitudes de vie quitte à prendre des risques.
+				créé un sentiment de Frustration. Pour citer ses mots, c'est comme s' il était enfermé dans son salon,
+				prisonnier de son lit.
+				C'est pour cette raison que j'ai décider d'axer mes recherches sur l'hospitalisation à domicile,
+				de créer le projet Amplitude.
+        	</p>
+			<a href="#" class="scroll_to_top">Retour en haut ↑</a>
+			<br>
+			<a class="suivant" href="projet1.html">Suivant</a>
+    	</article>
+    </main>
+    	<footer>
+    		<p>Arthur Le Breton, Amplit'ude - dernière mise-à-jour du site : 17/01/2024</p>
+    		    	<script>
+			var zoomIn = document.getElementById("zoomIn");
+			var zoomOut = document.getElementById("zoomOut");
+			var content = document.getElementById("content");
+			var currentSize = 100;
+			zoomIn.addEventListener("click", function() {
+				currentSize += 10;
+				content.style.fontSize = currentSize + "%";
+			});
+			zoomOut.addEventListener("click", function() {
+				currentSize -= 10;
+				content.style.fontSize = currentSize + "%";
+			});
+		</script>
+    	</footer>
+	</body>
+</html>

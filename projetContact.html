@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="styly.css" title=”original”>
+		<link rel="stylesheet" type="text/css" href="print.css" media="print" title="Impression">
+		<link rel="alternate stylesheet" type="text/css" href="screen.css" media="screen" title="Fond noir">
+		<title>Mini projet Amplitude</title>
+		<link rel="icon" href="icone.ico">
+	</head>
+	<body>
+    <header>
+    	<h1>Le projet Amplitude</h1>
+		<p><img src="logo.png" alt="logo Amplitude" id="img3"></p>
+    </header>
+    <nav>
+    	<ul>
+    		<li><a href="index.html">Accueil</a></li>
+        	<li><a href="projet1.html">Amplit'ude</a></li>
+        	<li><a href="projet2.html">Mise en place</a></li>
+        	<li><a href="projet3.html">Financement et Objectifs</a></li>
+        	<li><a href="projetContact.html">Contact</a></li>
+    	</ul>
+    </nav>
+		<button id="zoomIn">Zoom +</button>
+		<button id="zoomOut">Zoom -</button>
+    <main>
+    	<article id="content">
+        	<h2>Contact</h2>
+        	<p>
+        		Si vous avez des questions par rapport au projet Amplitude ou que vous souhaitez
+				établir une collaboration avec moi, vous pouvez me contacter par mail à l'adresse suivante : </p>
+			<form method="post">
+			<label>Votre email</label>
+			<input type="email" name="email" required>
+			<label>Message</label>
+			<textarea name="message" required></textarea>
+			<input type="submit">
+			</form>
+    		<hr>
+			<a class="precedent" href="projet3.html">Précédent</a>
+			<a class="suivant" href="index.html">Suivant</a>
+    	</article>
+    </main>
+    <!-- 
+	<?php
+		if (isset($_POST['message'])) {
+			$entete  = 'MIME-Version: 1.0' . "\r\n";
+			$entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+			$entete .= 'From: webmaster@monsite.fr' . "\r\n";
+			$entete .= 'Reply-to: ' . $_POST['email'];
+			$message = '<h1>Message envoyé depuis la page Contact de monsite.fr</h1>
+			<p><b>Email : </b>' . $_POST['email'] . '<br>
+			<b>Message : </b>' . htmlspecialchars($_POST['message']) . '</p>';
+			$retour = mail('destinataire@free.fr', 'Envoi depuis page Contact', $message, $entete);
+			if($retour)
+            echo '<p>Votre message a bien été envoyé.</p>';
+		}
+    ?> 
+	-->
+    	<footer>
+    		<p>Arthur Le Breton, Amplit'ude - dernière mise-à-jour du site : 17/01/2024</p>
+    		    	<script>
+			var zoomIn = document.getElementById("zoomIn");
+			var zoomOut = document.getElementById("zoomOut");
+			var content = document.getElementById("content");
+			var currentSize = 100;
+			zoomIn.addEventListener("click", function() {
+				currentSize += 10;
+				content.style.fontSize = currentSize + "%";
+			});
+			zoomOut.addEventListener("click", function() {
+				currentSize -= 10;
+				content.style.fontSize = currentSize + "%";
+			});
+		</script>
+    	</footer>
+	</body>
+</html>

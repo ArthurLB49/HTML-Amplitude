@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="styly.css" title=”original”>
+		<link rel="stylesheet" type="text/css" href="print.css" media="print" title="Impression">
+		<link rel="alternate stylesheet" type="text/css" href="screen.css" media="screen" title="Fond noir">
+		<title>Mini projet Amplitude</title>
+		<link rel="icon" href="icone.ico">
+	</head>
+	<body>
+    <header>
+    	<h1>Le projet Amplitude</h1>
+		<p><img src="logo.png" alt="logo Amplitude" id="img3"></p>
+    </header>
+    <nav>
+    	<ul>
+    		<li><a href="index.html">Accueil</a></li>
+        	<li><a href="projet1.html">Amplit'ude</a></li>
+        	<li><a href="projet2.html">Mise en place</a></li>
+        	<li><a href="projet3.html">Financement et Objectifs</a></li>
+        	<li><a href="projetContact.html">Contact</a></li>
+    	</ul>
+    </nav>
+		<button id="zoomIn">Zoom +</button>
+		<button id="zoomOut">Zoom -</button>
+    <main>
+    	<article id="content">
+        	<h2>Le fonctionnement d'Amplitude</h2>
+			<br>
+			<h3>Les trois leviers</h3>
+			<p><img src="diagramme.png" alt="diagramme" id="img4"></p>
+        	<p>
+        		Le projet Amplit'ude va agir sur trois leviers pour réaliser ses objectifs.
+				Dans un premier temps, il va prévenir les dégradations de l'état de santé en 
+				relevant et analysant les signaux faibles de la personne.
+			</p>
+			<p>
+				Ensuite grâce au traîtement de ces données, il va détecter les situations à risque et mettre en
+				contact le patient avec le service à la personne adéquat. Enfin, il va faciliter
+				la connexion entre la personne, son environnement et la maison.
+        	</p>
+        	<hr>
+        	<h3>Schéma de fonctionnement</h3>
+			<p><img src="fonctionnement.png" alt="schéma fonctionnement" id="img5"></p>
+        	<p>
+        		Comme présenté sur l'image ci-dessus, Amplit'ude est un lit médicalisé qui
+				va intégrer de nombreuses fonctions.
+			</p>				
+			<p>
+        		Sa fonction principale utilise les signaux faibles
+				afin de récupérer les données de santé du patient, tel que les données de sommeil, la tension
+				ou encore le poids. Amplit'ude integrera aussi un détecteur de chute et une fois toutes ces information
+				récupérées, elles seront envoyées au personnel d'Amplit'ude qui les traitera.
+        	</p>	
+        	<p>
+        		La dernière fonctionnalité est l'utilisation d'une tablette et d'une commande vocale
+				qui permettront la gestion de la domotique présente dans la maison, mais aussi de 
+				faciliter le contact avec les proches de la personne.
+        	</p>
+        	<hr>
+			<a class="precedent" href="index.html">Précédent</a>
+			<a href="#" class="scroll_to_top">Retour en haut ↑</a>
+			<a class="suivant" href="projet2.html">Suivant</a>
+    	</article>
+    </main>
+    	<footer>
+    		<p>Arthur Le Breton, Amplit'ude - dernière mise-à-jour du site : 17/01/2024</p>
+    		    	<script>
+			var zoomIn = document.getElementById("zoomIn");
+			var zoomOut = document.getElementById("zoomOut");
+			var content = document.getElementById("content");
+			var currentSize = 100;
+			zoomIn.addEventListener("click", function() {
+				currentSize += 10;
+				content.style.fontSize = currentSize + "%";
+			});
+			zoomOut.addEventListener("click", function() {
+				currentSize -= 10;
+				content.style.fontSize = currentSize + "%";
+			});
+		</script>
+    	</footer>
+	</body>
+</html>
